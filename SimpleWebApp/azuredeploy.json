@@ -36,17 +36,13 @@
       }
     },
     "location": {
-      "type": "string",
-      "defaultValue": "West US"
+      "type": "string"
     },
     "webSiteName": {
-      "type": "string",
-      "defaultValue": "[concat('webSite', uniqueString(resourceGroup().id))]"
+      "type": "string"
     }
   },
-  //"variables": {
-  //  "webSiteName": "[concat('webSite', uniqueString(resourceGroup().id))]"
-  //},
+
   "resources": [
     {
       "apiVersion": "2015-08-01",
@@ -281,22 +277,6 @@
           "sendToServiceOwners": true,
           "customEmails": [ ]
         }
-      }
-    },
-    {
-      "apiVersion": "2014-04-01",
-      "name": "[parameters('webSiteName')]",
-      "type": "Microsoft.Insights/components",
-      "location": "East US",
-      "dependsOn": [
-        "[concat('Microsoft.Web/sites/', parameters('webSiteName'))]"
-      ],
-      "tags": {
-        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', parameters('webSiteName'))]": "Resource",
-        "displayName": "AppInsightsComponent"
-      },
-      "properties": {
-        "applicationId": "[parameters('webSiteName')]"
       }
     }
   ]

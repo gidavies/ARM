@@ -5,8 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99E1AF7F-E99E-40D5-87B7-73F1CA5687F1}"
 	ProjectSection(SolutionItems) = preProject
-		..\SimpleWebApp\WebSite.json = ..\SimpleWebApp\WebSite.json
-		..\SimpleWebApp\WebSite.parameters.json = ..\SimpleWebApp\WebSite.parameters.json
+		..\SimpleWebApp\azuredeploy.json = ..\SimpleWebApp\azuredeploy.json
+		..\SimpleWebApp\azuredeploy.parameters.json = ..\SimpleWebApp\azuredeploy.parameters.json
 	EndProjectSection
 EndProject
 Global
